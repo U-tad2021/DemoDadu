@@ -20,6 +20,18 @@ fun main() {
 
     val anon = Anon("name", "lastName")
 
+    anon.event = object : Event {
+        override fun matchCenter() {
+            TODO("Not yet implemented")
+        }
+
+        override fun matchName(): String {
+            return "Pepe"
+        }
+
+    }
     println("anon: $anon")
     println("anon name: ${anon.name}")
+
+
 }
