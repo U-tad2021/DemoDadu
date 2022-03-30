@@ -1,5 +1,6 @@
 package com.amarinag.demo1
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -19,7 +20,11 @@ class MainActivity : AppCompatActivity() {
         btnNext.setOnClickListener {
             Log.d("AMG", "Buton pulsado")
             Toast.makeText(this@MainActivity, "btn clicked", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, HelloWorldActivity::class.java)
+            startActivity(intent)
         }
+
     }
 }
 
