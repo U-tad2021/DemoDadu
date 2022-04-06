@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Log.d("AMG", "onCreate()")
 
         val btnNext: Button = findViewById(R.id.btn_next)
         val tvTitle: TextView = findViewById(R.id.tv_title)
@@ -36,9 +37,9 @@ class MainActivity : AppCompatActivity() {
                 Log.d("AMG", "Buton pulsado $text")
                 Toast.makeText(this@MainActivity, "btn clicked  $text", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@MainActivity, HelloWorldActivity::class.java)
-                intent.putExtra("control", "DADU")
-                intent.putExtra("age", 56)
-                intent.putExtra("username", text)
+                intent.putExtra(EXTRA_CONTROL, "DADU")
+                intent.putExtra(EXTRA_AGE, 56)
+                intent.putExtra(EXTRA_USERNAME, text)
                 startActivity(intent)
             }
 
@@ -53,6 +54,11 @@ class MainActivity : AppCompatActivity() {
         })
         */
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("AMG", "onStart()")
     }
 }
 

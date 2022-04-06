@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="username">Username(it)</string>
+    <string name="welcome">Welcome(it)</string>
+    <string name="next">Next(it)</string>
+    <string name="welcome_username_age">Username: %s -- Age: %d (it)</string>
 </resources>

@@ -2,4 +2,6 @@
 <resources>
     <string name="username">Usuario</string>
     <string name="welcome">Bienvenido</string>
+    <string name="welcome_username_age">Usuario: %s -- Edad: %d</string>
+    <string name="next">Siguiente</string>
 </resources>
