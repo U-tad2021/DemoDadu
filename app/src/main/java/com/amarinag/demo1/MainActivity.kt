@@ -60,5 +60,31 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         Log.d("AMG", "onStart()")
     }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("AMG", "onResume()")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("AMG", "onPause()")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("AMG", "onStop()")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("AMG", "onDestroy()")
+
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d("AMG", "onRestart()")
+    }
 }
 
